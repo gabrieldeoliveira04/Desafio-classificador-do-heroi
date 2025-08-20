@@ -58,7 +58,7 @@ Tela principal:
 🌐 Deploy
 
 O projeto está disponível online em:
-👉 - Link do deploy: https://jubilant-telegram-7xrj94prr5w3p7p6-3000.app.github.dev/
+👉 - Link do deploy: [https://jubilant-telegram-7xrj94prr5w3p7p6-3000.app.github.dev/](https://desafio-classificador-do-heroi-r7j2arkg0.vercel.app/)
 
 ✨ Autor
 
