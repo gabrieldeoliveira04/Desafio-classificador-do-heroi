@@ -21,6 +21,8 @@ export default function Home() {
   const classificarHeroi = () => {
     if (xp === "") return;
 
+    let nivel = "";
+
     for (let i = 0; i < niveis.length; i++) {
       if (xp >= niveis[i].min && xp <= niveis[i].max) {
         nivel = niveis[i].nivel;
