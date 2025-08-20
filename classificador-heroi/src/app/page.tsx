@@ -7,18 +7,19 @@ export default function Home() {
   const [nome, setNome] = useState("");
   const [xp, setXp] = useState<number | "">("");
   const [resultado, setResultado] = useState("");
+  const niveis = [
+    { min: 0, max: 1000, nivel: "Ferro" },
+    { min: 1001, max: 2000, nivel: "Bronze" },
+    { min: 2001, max: 5000, nivel: "Prata" },
+    { min: 5001, max: 7000, nivel: "Ouro" },
+    { min: 7001, max: 8000, nivel: "Platina" },
+    { min: 8001, max: 9000, nivel: "Ascendente" },
+    { min: 9001, max: 10000, nivel: "Imortal" },
+    { min: 10001, max: Infinity, nivel: "Radiante" },
+  ];
+
   const classificarHeroi = () => {
     if (xp === "") return;
-
-    let nivel = "";
-    if (xp < 1000) nivel = "Ferro";
-    else if (xp <= 2000) nivel = "Bronze";
-    else if (xp <= 5000) nivel = "Prata";
-    else if (xp <= 7000) nivel = "Ouro";
-    else if (xp <= 8000) nivel = "Platina";
-    else if (xp <= 9000) nivel = "Ascendente";
-    else if (xp <= 10000) nivel = "Imortal";
-    else nivel = "Radiante";
 
     for (let i = 0; i < niveis.length; i++) {
       if (xp >= niveis[i].min && xp <= niveis[i].max) {
