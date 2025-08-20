@@ -19,6 +19,13 @@ export default function Home() {
     else if (xp <= 9000) nivel = "Ascendente";
     else if (xp <= 10000) nivel = "Imortal";
     else nivel = "Radiante";
+
+    for (let i = 0; i < niveis.length; i++) {
+      if (xp >= niveis[i].min && xp <= niveis[i].max) {
+        nivel = niveis[i].nivel;
+        break;
+      }
+    }
     setResultado(`O Herói de nome ${nome} está no nível de ${nivel}`);
   };
 
