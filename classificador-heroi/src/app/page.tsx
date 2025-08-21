@@ -33,7 +33,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-100">
+    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-100 text-white">
       <div className="bg-black shadow-lg rounded-2xl p-6 w-full max-w-md">
         <h1 className="text-2xl font-bold mb-4 text-center">
           Classificador de Nível de Herói
